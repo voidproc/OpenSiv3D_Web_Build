@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  app:
+    container_name: OpenSiv3DWebBuild
+    build: .
+    command: bash
+    volumes:
+      - ./work:/work
+    ports:
+      - "6931:6931"
